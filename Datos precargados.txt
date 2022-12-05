@@ -1,0 +1,27 @@
+MICROSERVICIO TICKETS
+
+TicketStatus
+new TicketStatus
+ID	STATUS
+1	Pendiente
+2	En curso
+3	Finalizado
+
+Prioritys
+ID	PRIORITY
+1	Baja
+2	Media
+3	Alta
+
+Areas
+ID	AREA
+1	Admin
+2	CompraVenta
+3	Soporte
+
+
+TicketCategory
+ID	TICKETCATEGORY
+1	Ventas
+2	Compras
+3	Reparacion hardware

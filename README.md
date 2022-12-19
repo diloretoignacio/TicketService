@@ -4,6 +4,8 @@ El presente proytecto es un **Microservicio** desarrollado en el lenguaje de pro
 
 El mismo se ha desarrollado mediante el uso de **Entity Framework** como ORM.
 
+El actual microservicio en conjunto con [AuthService](https://github.com/diloretoignacio/AuthService) son consumidos por la aplicacion web [TicketsFrontend](https://github.com/diloretoignacio/TicketsFrontend)
+
 A continuacion se demuestran los principales endopoints para realizar acciones sobre la informacion:
 ## Crear Ticket
 ### Request

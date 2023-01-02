@@ -109,7 +109,3 @@ Ademas se permite:
 * Obtener tickets de un estado en particular
 
 Todos los endpoints correspondientes se encuentran en el archivo **Collección Postman ServiceTickets.json** que contiene la coleccion de Postamn utilizada
-
-El presente microservicio es consumido por la aplicacion web [TicketsFrontend](https://github.com/diloretoignacio/TicketsFrontend)
-
-

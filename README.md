@@ -94,23 +94,7 @@ GET /api/tickets/:id
         "email": "psgrupointer@gmail.com"
     }
 }
-
-\\\\\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 ## Obtener ticket por ID
 ```
 GET /api/tickets/:id
@@ -183,8 +167,6 @@ GET /api/tickets/:id
     }
 }
 ```
-```
-
 ## Crear Comentario
 ### Request
 ```

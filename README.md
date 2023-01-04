@@ -29,43 +29,160 @@ GET /api/tickets/:id
 ```
 ### Response
 ```
-[
-    {
-        "idTicket": 4,
-        "idUser": 4,
-        "ticketComments": [],
-        "ticketLogs": [],
-        "ticketStatus": {
-            "idTicketStatus": 1,
-            "description": "Pendiente"
+{
+    "idTicket": 1,
+    "ticketComments": [
+        {
+            "idComment": 1,
+            "idUser": 5,
+            "idTicket": 1,
+            "comment": "Se ha reparado el mouse",
+            "file": "",
+            "dateComment": "2023-01-04T15:16:31.235637"
+        }
+    ],
+    "ticketLogs": [
+        {
+            "idTicketLog": 1,
+            "idTicket": 1,
+            "idUser": 4,
+            "dateAction": "2023-01-04T15:12:42.00712",
+            "action": "Creado"
         },
-        "ticketPriority": {
-            "idPriority": 1,
-            "description": "Baja"
+        {
+            "idTicketLog": 2,
+            "idTicket": 1,
+            "idUser": 5,
+            "dateAction": "2023-01-04T15:16:15.1319622",
+            "action": "Actualizado el estado"
+        }
+    ],
+    "ticketStatus": {
+        "idTicketStatus": 3,
+        "description": "Finalizado"
+    },
+    "ticketPriority": {
+        "idPriority": 3,
+        "description": "Alta"
+    },
+    "ticketBody": {
+        "idTicketBody": 1,
+        "title": "No funciona el mouse",
+        "description": "¡Hola equipo!\n\nEl mouse de mi PC no se encuentra funcionando correctamente",
+        "file": ""
+    },
+    "ticketCount": {
+        "idTicketCount": 1,
+        "countOpen": 0,
+        "countApproved": 0,
+        "countDisapproved": 0
+    },
+    "ticketCategory": {
+        "idTicketCategory": 3,
+        "name": "Reparacion Hardware",
+        "description": "Categoria responsable de gestionar las reparaciones de Hardware",
+        "reqApproval": true,
+        "minApprovers": 1,
+        "idAreadestino": 3,
+        "active": true
+    },
+    "user": {
+        "userId": 1,
+        "userName": "admin",
+        "firstName": "Cosme",
+        "lastName": "Fulanito",
+        "email": "psgrupointer@gmail.com"
+    }
+}
+
+\\\\\\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Obtener ticket por ID
+```
+GET /api/tickets/:id
+```
+### Response
+```
+{
+    "idTicket": 1,
+    "ticketComments": [
+        {
+            "idComment": 1,
+            "idUser": 5,
+            "idTicket": 1,
+            "comment": "Se ha reparado el mouse",
+            "file": "",
+            "dateComment": "2023-01-04T15:16:31.235637"
+        }
+    ],
+    "ticketLogs": [
+        {
+            "idTicketLog": 1,
+            "idTicket": 1,
+            "idUser": 4,
+            "dateAction": "2023-01-04T15:12:42.00712",
+            "action": "Creado"
         },
-        "ticketBody": {
-            "idTicketBody": 5,
-            "title": "Titulo del ticket",
-            "description": "Descripcion del ticket",
-            "file": "url"
-        },
-        "ticketCount": {
-            "idTicketCount": 5,
-            "countOpen": 0,
-            "countApproved": 0,
-            "countDisapproved": 0
-        },
-        "ticketCategory": {
-            "idTicketCategory": 3,
-            "name": "Reparacion Hardware",
-            "description": "Categoria responsable de gestionar las reparaciones de Hardware",
-            "reqApproval": true,
-            "minApprovers": 1,
-            "idAreadestino": 3,
-            "active": true
-        }
-    }
-]
+        {
+            "idTicketLog": 2,
+            "idTicket": 1,
+            "idUser": 5,
+            "dateAction": "2023-01-04T15:16:15.1319622",
+            "action": "Actualizado el estado"
+        }
+    ],
+    "ticketStatus": {
+        "idTicketStatus": 3,
+        "description": "Finalizado"
+    },
+    "ticketPriority": {
+        "idPriority": 3,
+        "description": "Alta"
+    },
+    "ticketBody": {
+        "idTicketBody": 1,
+        "title": "No funciona el mouse",
+        "description": "¡Hola equipo!\n\nEl mouse de mi PC no se encuentra funcionando correctamente",
+        "file": ""
+    },
+    "ticketCount": {
+        "idTicketCount": 1,
+        "countOpen": 0,
+        "countApproved": 0,
+        "countDisapproved": 0
+    },
+    "ticketCategory": {
+        "idTicketCategory": 3,
+        "name": "Reparacion Hardware",
+        "description": "Categoria responsable de gestionar las reparaciones de Hardware",
+        "reqApproval": true,
+        "minApprovers": 1,
+        "idAreadestino": 3,
+        "active": true
+    },
+    "user": {
+        "userId": 1,
+        "userName": "admin",
+        "firstName": "Cosme",
+        "lastName": "Fulanito",
+        "email": "cosmefulanito@gmail.com"
+    }
+}
+```
 ```
 
 ## Crear Comentario
